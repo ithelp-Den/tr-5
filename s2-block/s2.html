@@ -1,0 +1,156 @@
+<!-- =========================================================
+     БЛОК S2 + ПОПАП-СЛАЙДЕР ПРОГРАМ — HTML для вставки
+     1) Блок <div class="s2"> вставити в потрібне місце сторінки
+     2) Попап <div class="modal-overlay"> — будь-де в <body> (краще перед </body>)
+     Підключення css/js — див. README.md
+     ========================================================= -->
+
+<!-- ===================== БЛОК S2 ===================== -->
+<div class="s2">
+  <!-- Плашка-питання -->
+  <div class="q-pill">
+    <img src="./s2-block/images-b/imgn18.webp" class="q-pill-icon" alt="">
+    <div class="q-pill-text">SO WHAT DO YOU GET?</div>
+  </div>
+
+  <!-- EVERYTHING + бейджі -->
+  <div class="s2-everything">
+    <img src="./s2-block/images-b/imgn17.webp" alt="Everything: all programs, 300+ lessons, one account">
+  </div>
+
+  <!-- Текст -->
+  <div class="s2-footer-text">
+    <span class="s2-fw-400">Splits </span><span class="s2-fw-700">· </span>
+    <span class="s2-fw-400">Mobility </span><span class="s2-fw-700">· </span>
+    <span class="s2-fw-400">Back </span><span class="s2-fw-700">· </span>
+    <span class="s2-fw-400">Strength</span><br>
+    <span class="s2-fw-400">Every program Karyna has ever released, in one account</span>
+  </div>
+
+  <!-- Програми по категоріях (клік відкриває модалку з усіма програмами) -->
+  <div class="s2-grid-wrapper">
+    <div class="s2-cat">
+      <div class="s2-cat-title">Front + Middle split</div>
+      <div class="s2-cat-row">
+        <img src="./s2-block/images-b/imgn12.webp" data-slide="11" alt="Reach your front split">
+        <img src="./s2-block/images-b/imgn14.webp" data-slide="12" alt="Open your middle split">
+      </div>
+    </div>
+    <div class="s2-cat">
+      <div class="s2-cat-title">Mobility + Flexibility</div>
+      <div class="s2-cat-row">
+        <img src="./s2-block/images-b/imgn4.webp" data-slide="3" alt="Upper body mobility">
+        <img src="./s2-block/images-b/imgn6.webp" data-slide="13" alt="Beginner mobility">
+        <img src="./s2-block/images-b/imgn13.webp" data-slide="15" alt="Hip mobility">
+        <img src="./s2-block/images-b/imgn15.webp" data-slide="5" alt="Full body mobility">
+      </div>
+    </div>
+    <div class="s2-cat">
+      <div class="s2-cat-title">Strength</div>
+      <div class="s2-cat-row">
+        <img src="./s2-block/images-b/imgn5.webp" data-slide="10" alt="Glutes program">
+        <img src="./s2-block/images-b/imgn7.webp" data-slide="9" alt="Strong core program">
+        <img src="./s2-block/images-b/imgn19.webp" data-slide="0" alt="Fit program">
+        <img src="./s2-block/images-b/imgn16.webp" data-slide="4" alt="Handstand mastery">
+      </div>
+    </div>
+  </div>
+
+  <div class="s2-tools">ALL GUIDES &amp; TOOLS INCLUDED</div>
+
+  <!-- Гайди -->
+  <div class="s2-guides">
+    <div class="s2-guide">
+      <div class="s2-guide-img"><img src="./s2-block/images-b/imgn1.webp" class="s2-guide-img-1" alt="Food Tracker"></div>
+      <div class="s2-guide-text">
+        <div class="s2-guide-title">Food Tracker</div>
+        <div class="s2-guide-desc">Track your nutrition alongside your training, 100+ recipes and macro calculator inside</div>
+      </div>
+    </div>
+    <div class="s2-guide">
+      <div class="s2-guide-img"><img src="./s2-block/images-b/imgn2.webp" class="s2-guide-img-2" alt="SMART Goals"></div>
+      <div class="s2-guide-text">
+        <div class="s2-guide-title">SMART Goals</div>
+        <div class="s2-guide-desc">Turn "I want to move better" into a weekly plan you can actually follow</div>
+      </div>
+    </div>
+    <div class="s2-guide">
+      <div class="s2-guide-img"><img src="./s2-block/images-b/imgn3.webp" class="s2-guide-img-3" alt="Habit Tracker"></div>
+      <div class="s2-guide-text">
+        <div class="s2-guide-title">Habit Tracker</div>
+        <div class="s2-guide-desc">Track steps, workouts, water, sleep and recovery</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Кнопка -->
+  <div class="s2-unlock-group">
+    <a href="https://mmoschool.online/shop/item/13431" data-pay="v1" style="font-size: 30px; white-space: nowrap" class="s2-unlock-btn check-click">Unlock all for just <span style="padding-left: 4px" data-pay-price="v1">14,50&euro;</span></a>
+    <div class="s2-unlock-text">Join 60,000+ students already training with Karyna</div>
+  </div>
+</div>
+
+
+<!-- ===================== ПОПАП-СЛАЙДЕР (S2) ===================== -->
+<div class="modal-overlay" id="programsModal">
+  <!-- Головний контейнер модалки -->
+  <div class="modal-wrapper">
+    
+    <!-- Внутрішня біла підкладка -->
+    <div class="modal-inner">
+      
+      <!-- Заголовок + Стрічка -->
+      <div class="modal-top">
+        <div class="modal-title-group">
+          <div class="modal-title-red">ALL INCLUDED</div>
+          <div class="modal-title-black">EXPLORE ALL 16 PROGRAMS</div>
+        </div>
+        
+        <div class="s2-marquee-container modal-marquee">
+          <div class="s2-marquee-track">
+            <!-- Група 1 -->
+            <div class="s2-marquee-group">
+              <div class="s2-marquee-item"><img src="./s2-block/images-b/icons/img40.webp" class="s2-star" alt="star"><span>ALL INCLUDED</span></div>
+              <div class="s2-marquee-item"><img src="./s2-block/images-b/icons/img40.webp" class="s2-star" alt="star"><span>ALL INCLUDED</span></div>
+              <div class="s2-marquee-item"><img src="./s2-block/images-b/icons/img40.webp" class="s2-star" alt="star"><span>ALL INCLUDED</span></div>
+              <div class="s2-marquee-item"><img src="./s2-block/images-b/icons/img40.webp" class="s2-star" alt="star"><span>ALL INCLUDED</span></div>
+            </div>
+            <!-- Група 2 -->
+            <div class="s2-marquee-group">
+              <div class="s2-marquee-item"><img src="./s2-block/images-b/icons/img40.webp" class="s2-star" alt="star"><span>ALL INCLUDED</span></div>
+              <div class="s2-marquee-item"><img src="./s2-block/images-b/icons/img40.webp" class="s2-star" alt="star"><span>ALL INCLUDED</span></div>
+              <div class="s2-marquee-item"><img src="./s2-block/images-b/icons/img40.webp" class="s2-star" alt="star"><span>ALL INCLUDED</span></div>
+              <div class="s2-marquee-item"><img src="./s2-block/images-b/icons/img40.webp" class="s2-star" alt="star"><span>ALL INCLUDED</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Слайдер -->
+      <div class="swiper modal-swiper">
+        <div class="swiper-wrapper" id="modalSwiperWrapper">
+          <!-- Слайди згенерує JavaScript -->
+        </div>
+      </div>
+
+      <!-- Кнопки -->
+      <div class="modal-nav">
+        <div class="modal-btn-prev">
+          <img src="./s2-block/images-b/icons/left.png" alt="Left">
+        </div>
+        <div class="modal-btn-next">
+          <img src="./s2-block/images-b/icons/right.png" alt="Right">
+        </div>
+      </div>
+      
+    </div>
+
+    <!-- Кнопка закриття (Винесена за межі білого блоку, як у вас) -->
+    <div class="modal-close" id="closeModalBtn">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1 1L13 13M1 13L13 1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+
+  </div>
+</div>
